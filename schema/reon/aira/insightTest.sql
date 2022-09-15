@@ -3,7 +3,6 @@ CREATE TABLE `insightTest` (
   `orgId` int(10) DEFAULT NULL,
   `level` enum('1','2','3') COLLATE utf8mb4_unicode_ci NOT NULL,
   `level_name` enum('Org','Zone','Store') COLLATE utf8mb4_unicode_ci NOT NULL,
-  `level_value` text COLLATE utf8mb4_unicode_ci,
   `zone` text COLLATE utf8mb4_unicode_ci,
   `KPI` text COLLATE utf8mb4_unicode_ci,
   `storeId` int(10) DEFAULT NULL,
