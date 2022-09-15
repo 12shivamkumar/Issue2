@@ -12,7 +12,6 @@ if [[ "$i" =~ ^schema.* ]]; then
 fi
 done
 
-
 change_in_db_files=false
 if [[ ${#schema_list[@]} -gt 0 ]]; then
   change_in_db_files=true
