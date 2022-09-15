@@ -28,7 +28,7 @@ if [[ ${#changed_files[@]} -gt 0  ]]; then
 fi
 if [[ $ret==1 ]]; then
   echo "These were the sql files where u have DROP some column from Schema"
-  echo ${changed_files[@]}
+  echo "${changed_files[@]}" | tr ' ' '\n'
 fi
 
 exit $ret
